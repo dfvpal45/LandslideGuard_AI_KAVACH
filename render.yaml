@@ -8,7 +8,7 @@ services:
     healthCheckPath: /api/health
     envVars:
       - key: PYTHON_VERSION
-        value: 3.13.2
+        value: 3.13.12
       - key: LANDSLIDEGUARD_ALLOWED_ORIGINS
         value: https://landslide-guard-ai-kavach-emv5brk0n-team-kavach1.vercel.app,http://localhost:5173
       - key: LANDSLIDEGUARD_ALLOWED_HOSTS
