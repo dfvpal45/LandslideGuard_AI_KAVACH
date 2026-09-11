@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: kavach-landslideguard-api
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt && python seed_model.py
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.2
+      - key: LANDSLIDEGUARD_ALLOWED_ORIGINS
+        value: https://landslide-guard-ai-kavach-emv5brk0n-team-kavach1.vercel.app,http://localhost:5173
+      - key: LANDSLIDEGUARD_ALLOWED_HOSTS
+        value: kavach-landslideguard-api.onrender.com,localhost,127.0.0.1
+      - key: LANDSLIDEGUARD_RATE_LIMIT
+        value: "120"
+      - key: LANDSLIDEGUARD_API_KEY
+        generateValue: true
+      - key: LANDSLIDEGUARD_ADMIN_KEY
+        generateValue: true
