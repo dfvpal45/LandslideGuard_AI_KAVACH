@@ -22,10 +22,10 @@ API_KEY = os.getenv("LANDSLIDEGUARD_API_KEY", "").strip()
 ADMIN_KEY = os.getenv("LANDSLIDEGUARD_ADMIN_KEY", "demo-admin-key").strip()
 allowed_origins = [origin.strip() for origin in os.getenv(
     "LANDSLIDEGUARD_ALLOWED_ORIGINS",
-    "http://localhost:5173,http://127.0.0.1:5173"
+    "https://landslide-guard-ai-kavach-qo1iyqkoy-team-kavach1.vercel.app"
 ).split(",") if origin.strip()]
 allowed_hosts = [host.strip() for host in os.getenv(
-    "LANDSLIDEGUARD_ALLOWED_HOSTS", "127.0.0.1,localhost"
+    "LANDSLIDEGUARD_ALLOWED_HOSTS", "https://landslideguard-ai-kavach.onrender.com"
 ).split(",") if host.strip()]
 request_log = defaultdict(deque)
 RATE_LIMIT = int(os.getenv("LANDSLIDEGUARD_RATE_LIMIT", "120"))
