@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-family: 'Public Sans', Arial, sans-serif;
+    color: #10222d;
+    background: #f5f7f4;
+    font-synthesis: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+.leaflet-container {
+    z-index: 0;
+    font-family: 'Public Sans', Arial, sans-serif;
+}
+
+.react-flow__node {
+    border: 1px solid #b9d0c9;
+    border-radius: 0;
+    background: #fff;
+    color: #173847;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 9px 12px;
+    box-shadow: 0 3px 10px rgba(16, 34, 45, .08);
+}
+
+.react-flow__edge-path {
+    stroke: #087f78;
+    stroke-width: 2;
+}
+
+.react-flow__controls {
+    border: 1px solid #dbe5e1;
+    box-shadow: none;
+}
+
+.react-flow__controls-button {
+    background: #fff;
+    border-bottom-color: #dbe5e1;
+}
+
+.panel {
+    border: 1px solid #dde6e2;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(16, 34, 45, .045);
+}
+
+@media (min-width: 768px) {
+    .panel {
+        padding: 24px;
+    }
+}

@@ -1,0 +1,96 @@
+{
+  "zones": [
+    {
+      "id": "ZONE-01",
+      "name": "Demo Valley North / Arunachal Pradesh",
+      "center": [
+        27.1000,
+        93.6200
+      ],
+      "risk": 0.78,
+      "assets": [
+        {
+          "type": "Road",
+          "name": "Mountain Road A",
+          "lat": 27.102,
+          "lng": 93.616
+        },
+        {
+          "type": "Settlement",
+          "name": "Valley Hamlet",
+          "lat": 27.097,
+          "lng": 93.624
+        },
+        {
+          "type": "School",
+          "name": "Demo Secondary School",
+          "lat": 27.106,
+          "lng": 93.628
+        }
+      ]
+    },
+    {
+      "id": "ZONE-02",
+      "name": "Demo Ridge East / Assam",
+      "center": [
+        26.1450,
+        91.7350
+      ],
+      "risk": 0.56,
+      "assets": [
+        {
+          "type": "Road",
+          "name": "Ridge Route B",
+          "lat": 26.143,
+          "lng": 91.732
+        },
+        {
+          "type": "Bridge",
+          "name": "East Creek Bridge",
+          "lat": 26.148,
+          "lng": 91.739
+        }
+      ]
+    },
+    {
+      "id": "ZONE-03",
+      "name": "Demo Slope South / Meghalaya",
+      "center": [
+        25.5780,
+        91.8930
+      ],
+      "risk": 0.31,
+      "assets": [
+        {
+          "type": "Settlement",
+          "name": "South Cluster",
+          "lat": 25.576,
+          "lng": 91.895
+        },
+        {
+          "type": "Road",
+          "name": "South Access Road",
+          "lat": 25.581,
+          "lng": 91.889
+        }
+      ]
+    },
+    {
+      "id": "ZONE-04",
+      "name": "Demo Basin West / Mizoram",
+      "center": [
+        23.7300,
+        92.7200
+      ],
+      "risk": 0.14,
+      "assets": [
+        {
+          "type": "Hospital",
+          "name": "Demo Health Centre",
+          "lat": 23.732,
+          "lng": 92.716
+        }
+      ]
+    }
+  ]
+}

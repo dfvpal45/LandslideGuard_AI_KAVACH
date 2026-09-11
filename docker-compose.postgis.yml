@@ -1,0 +1,17 @@
+services:
+  postgis:
+    image: postgis/postgis:16-3.4
+    container_name: kavach-postgis
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: landslideguard
+      POSTGRES_USER: kavach
+      POSTGRES_PASSWORD: change-this-local-password
+    ports:
+      - "5432:5432"
+    volumes:
+      - kavach_postgis_data:/var/lib/postgresql/data
+      - ./backend/postgres_schema.sql:/docker-entrypoint-initdb.d/001_schema.sql:ro
+
+volumes:
+  kavach_postgis_data:
